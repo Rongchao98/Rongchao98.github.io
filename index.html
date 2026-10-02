@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rongchao Xu</title>
+  <meta name="description" content="Rongchao Xu, Ph.D. candidate in Computer Science at Florida State University, working on generative AI for human-centered spatiotemporal data.">
+  <!-- Icons are resized from assets/img/logo.png -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ───────── Tabs (hash-based: #about, #news, #publications, #experience, #service) ───────── -->
+  <nav class="tabbar" aria-label="Sections">
+    <div class="container tabbar-inner">
+      <a class="tabbar-brand" href="#about"><span class="mini-avatar" id="mini-avatar">RX</span>Rongchao Xu</a>
+      <div class="tabs" role="tablist">
+        <a class="tab" href="#about" data-tab="about" role="tab">About</a>
+        <a class="tab" href="#news" data-tab="news" role="tab">News</a>
+        <a class="tab" href="#publications" data-tab="publications" role="tab">Publications</a>
+        <a class="tab" href="#experience" data-tab="experience" role="tab">Experience</a>
+        <a class="tab" href="#service" data-tab="service" role="tab">Service</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container layout">
+
+    <!-- ───────── Profile sidebar (filled from data/site.js) ───────── -->
+    <aside class="profile">
+      <div class="profile-head">
+        <div class="avatar" id="avatar"><span class="avatar-fallback" aria-hidden="true">RX</span></div>
+        <div>
+          <h1 class="profile-name">Rongchao Xu</h1>
+          <ul class="profile-affil" id="affil"></ul>
+        </div>
+      </div>
+      <ul class="vcard" id="vcard"></ul>
+    </aside>
+
+    <main>
+      <!-- ───────── About ───────── -->
+      <div class="panel" data-panel="about" role="tabpanel">
+
+        <!-- README: plain HTML, edit freely -->
+        <article class="box readme">
+          <!-- Plain HTML. {paper-id} placeholders (ids from data/publications.js) become links to that paper. -->
+          <div class="markdown" data-paper-links>
+            <p>
+              I am a fourth-year Ph.D. candidate in Computer Science at
+              <a href="https://www.cs.fsu.edu/" target="_blank" rel="noopener">Florida State University</a>,
+              advised by <a href="https://www.cs.fsu.edu/department/faculty/guang/" target="_blank" rel="noopener">Prof. Guang Wang</a>
+              in the <a href="http://guangwang.me/#/home" target="_blank" rel="noopener">Data, Computing, and Society (DCS) Lab</a>.
+              Before starting my Ph.D., I received my B.Eng. in Computer Science and Technology from Beijing University of Technology.
+            </p>
+            <p>
+              My research focuses on <strong>generative AI for the physical world</strong>. I build models that learn how
+              people and physical systems behave across space and time, and that can generate, complete, and forecast this
+              data reliably, especially when real data is scarce, sensitive, or incomplete. I developed diffusion models
+              for human mobility, activity, and time series from real-world systems such as cities, energy, and healthcare,
+              together with uncertainty quantification so that these models signal when their outputs should not be trusted.
+            </p>
+            <p>
+              My work has appeared at KDD, AAAI, IJCAI, IMWUT/UbiComp, CIKM, SIAM SDM, and ACM SIGSPATIAL. I serve on the
+              program committees of AAAI, KDD, WSDM, The Web Conference, CIKM, and ACM SIGSPATIAL, and review for IEEE TMC
+              and IEEE TETCI. I have received the Dean’s Award for Doctoral Excellence from Florida State
+              University and the NSF Student Travel Award. I am always happy to discuss research
+              collaborations and industry opportunities; feel free to <a href="mailto:rx21a@fsu.edu" data-flash="mail">reach out</a>.
+            </p>
+          </div>
+        </article>
+
+        <section class="block">
+          <div class="block-head">
+            <h2>Recent News</h2>
+            <a class="block-link" href="#news">All news →</a>
+          </div>
+          <ol class="timeline" id="recent-news"></ol>
+        </section>
+
+        <section class="block">
+          <div class="block-head">
+            <h2>Selected Publications</h2>
+            <a class="block-link" href="#publications">All publications →</a>
+          </div>
+          <ol class="pinned" id="pinned"></ol>
+        </section>
+      </div>
+
+      <!-- ───────── News ───────── -->
+      <div class="panel" data-panel="news" role="tabpanel">
+        <div id="news-all"></div>
+      </div>
+
+      <!-- ───────── Publications ───────── -->
+      <div class="panel" data-panel="publications" role="tabpanel">
+        <div class="toolbar">
+          <input class="input" id="pub-search" type="search" placeholder="Find a publication…" aria-label="Search publications">
+          <select class="select" id="pub-type" aria-label="Type">
+            <option value="all">Type: All</option>
+            <option value="reviewed">Peer-reviewed</option>
+            <option value="preprint">Preprints</option>
+          </select>
+          <select class="select" id="pub-topic" aria-label="Topic"></select>
+          <select class="select" id="pub-role" aria-label="Authorship">
+            <option value="all">Authorship: All</option>
+            <option value="first">First author</option>
+            <option value="co">Co-author</option>
+          </select>
+        </div>
+        <p class="result-count" id="pub-count" aria-live="polite"></p>
+        <ol class="publist" id="publist"></ol>
+        <p class="muted small scholar-note">
+          Also on <a href="https://scholar.google.com/citations?user=mzttMQ8AAAAJ" target="_blank" rel="noopener">Google Scholar</a>.
+        </p>
+      </div>
+
+      <!-- ───────── Experience ───────── -->
+      <div class="panel" data-panel="experience" role="tabpanel">
+        <div class="box">
+          <div class="box-header"><h2>Education</h2></div>
+          <ul class="rows" id="education"></ul>
+        </div>
+        <div class="box">
+          <div class="box-header"><h2>Industry</h2></div>
+          <ul class="rows" id="industry"></ul>
+        </div>
+        <div class="box" id="awards-box"></div>
+      </div>
+
+      <!-- ───────── Service ───────── -->
+      <div class="panel" data-panel="service" role="tabpanel">
+        <div class="box" id="service-box"></div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container" id="footer"></div>
+  </footer>
+
+  <script src="data/site.js"></script>
+  <script src="data/publications.js"></script>
+  <script src="data/abstracts.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
