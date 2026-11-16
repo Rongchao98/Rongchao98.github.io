@@ -12,7 +12,7 @@ window.SITE = {
   selfNames: ['Rongchao Xu'],
 
   // Shown in the footer as "Last updated".
-  updated: '2026-10',
+  updated: '2026-11',
 
   // Sidebar links. `icon`: mail | scholar | linkedin | github | cv | link. Entries with an empty url are hidden.
   vcard: [
@@ -92,6 +92,9 @@ window.SITE = {
     { year: 2026, venue: 'SpatialConnect', role: 'pc', full: 'ACM SIGSPATIAL Workshop on Spatial Intelligence for Smart and Connected Communities' },
     { year: 2026, venue: 'IEEE TMC',       role: 'reviewer', full: 'IEEE Transactions on Mobile Computing' },
     { year: 2026, venue: 'IEEE TETCI',     role: 'reviewer', full: 'IEEE Transactions on Emerging Topics in Computational Intelligence' },
+    { year: 2026, venue: 'IEEE TSUSC',     role: 'reviewer', full: 'IEEE Transactions on Sustainable Computing' },
+    { year: 2026, venue: 'Pattern Recognition', role: 'reviewer', full: 'Pattern Recognition' },
+    { year: 2026, venue: 'GIScience & Remote Sensing', role: 'reviewer', full: 'GIScience & Remote Sensing' },
     { year: 2025, venue: 'KDD',            role: 'pc', full: 'ACM SIGKDD Conference on Knowledge Discovery and Data Mining' },
     { year: 2025, venue: 'WWW',            role: 'pc', full: 'The Web Conference' },
   ],
