@@ -83,6 +83,7 @@ window.SITE = {
     { year: 2027, venue: 'AAAI',           role: 'pc', full: 'AAAI Conference on Artificial Intelligence' },
     { year: 2027, venue: 'KDD',            role: 'pc', full: 'ACM SIGKDD Conference on Knowledge Discovery and Data Mining' },
     { year: 2027, venue: 'WSDM',           role: 'pc', full: 'ACM International Conference on Web Search and Data Mining' },
+    { year: 2027, venue: 'WWW',            role: 'pc', full: 'The Web Conference' },
     { year: 2027, venue: 'SpatialConnect', role: 'pc', full: 'ACM SIGSPATIAL Workshop on Spatial Intelligence for Smart and Connected Communities' },
     { year: 2026, venue: 'AAAI',           role: 'pc', full: 'AAAI Conference on Artificial Intelligence' },
     { year: 2026, venue: 'CIKM',           role: 'pc', full: 'ACM International Conference on Information and Knowledge Management' },
